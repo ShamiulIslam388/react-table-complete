@@ -1,4 +1,49 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+table {
+  border-collapse: collapse;
+}
+
+th,
+tr,
+td {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+input {
+  width: 50%;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  border: 1px solid #ccc;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 4px 10px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.pagination a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
 }
